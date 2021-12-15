@@ -1,0 +1,76 @@
+html, body {
+    margin: 0;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-bottom {
+    display: flex;
+    justify-content: center;
+}
+
+.screen {
+    width: 100vw;
+    height: 100vh;
+}
+
+.screen-1 {
+    background-color: red;
+}
+
+.screen-2 {
+    background-color: blue;
+}
+
+.parent {
+    padding: 20px 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 64px);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 20px;
+    justify-content: space-between;
+    }
+
+.app-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 15px;
+
+}
+
+.app-text {
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    margin: 0;
+    margin-top: 5px;
+}
+
+.owl-dots {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+
+.bottom {
+    position: absolute;
+    box-sizing: border-box;
+    padding: 15px;
+    z-index: 9999;
+    width: calc(100% - 20px);
+    border-radius: 30px;
+    bottom: 10px;
+    background-color: rgb(0, 0, 0);
+}
+
+.bottom-icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
